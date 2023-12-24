@@ -11,3 +11,15 @@ while(userNumber!=gameNumber){
 }
 
 console.log("Congratulations, You entered the correct number!!")
+
+
+
+//Template literals-->(string written in backticks ` `)
+//string interpolation--> ${}
+
+let obj={
+    item:"pen",
+    price:10,
+};
+
+console.log(`The cost of ${obj.item} is ${obj.price} rupees`);
