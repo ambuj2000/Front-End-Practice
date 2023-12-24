@@ -23,3 +23,16 @@ let obj={
 };
 
 console.log(`The cost of ${obj.item} is ${obj.price} rupees`);
+
+
+
+// Q2. Prompt the user to enter their fullname. Generate a username for them based on the input.
+// Start the username with @, followed by their fullname and ending with the fullname length.
+// e.g- username='Ambuj' o/p=@Ambuj5
+
+
+let usrname=prompt("Enter your name to generate the username :");
+let str='@';
+let len=usrname.length;
+let ans=str.concat(usrname);
+console.log(ans+len);
