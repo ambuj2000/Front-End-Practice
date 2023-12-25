@@ -72,3 +72,20 @@ for(let i=0;i<items.length;i++){
 }
 console.log(items);
 
+
+//Q.5 Create an array to store companies-> "Bloomberg","Microsoft","Uber","Google","IBM","Netflix"
+
+// a. Remove the first company from the array
+// b. Remove Uber and add Ola in its place
+// c. Add Amazon at the end
+
+let arr=["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+
+//arr.shift();-->(ans of a)
+
+
+arr.splice(2,1,"Ola");//ans of b
+
+arr.push('Amazon');//ans of c
+
+
