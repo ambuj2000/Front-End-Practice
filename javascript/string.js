@@ -1,4 +1,5 @@
 //strings are immutable in JS
+//Arrays are mutable in JS
 
 str="Ambuj";
 newstr=str.toUpperCase();
