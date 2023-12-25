@@ -49,3 +49,26 @@ for(let mark of marks){
 }
 let ans=sum/len;
 console.log(ans);
+
+//Q.4 For a given array with prices of 5 items->[250,645,300,900,50].
+//All item have an offer of 10% OFF on them. Change the array to store
+//the final price after applying offer.
+
+//Approach-1
+let items=[250,645,300,900,50];
+let i=0;
+for(let item of items){
+    let cnt=item/10;
+    items[i]=items[i]-cnt;
+    i++;
+}
+console.log(items);
+
+//Approach-2
+
+for(let i=0;i<items.length;i++){
+    let check=items[i]/10;
+    items[i]=items[i]-check;
+}
+console.log(items);
+
