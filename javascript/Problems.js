@@ -36,3 +36,16 @@ let str='@';
 let len=usrname.length;
 let ans=str.concat(usrname);
 console.log(ans+len);
+
+
+//Q3. For a given array with marks of students->[85,97,44,37,76,60].
+//Find the average marks of the entire class.
+
+let marks=[85,97,44,37,76,60];
+let len=marks.length;
+let sum=0;
+for(let mark of marks){
+    sum+=mark;
+}
+let ans=sum/len;
+console.log(ans);
