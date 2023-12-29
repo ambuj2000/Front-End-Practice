@@ -89,3 +89,29 @@ arr.splice(2,1,"Ola");//ans of b
 arr.push('Amazon');//ans of c
 
 
+// Q.6  create a function using function keyword that takes String as an argument & returns the
+// number of vowels in the String.
+
+function vow(s){
+    for(let i=0;i<s.length;i++){
+        if(s[i]=='a' || s[i]=="e"||s[i]=='i' || s[i]=="o" ||s[i]=='u'){
+            console.log(s[i]);
+        }
+    }
+}
+
+vow("love");
+
+
+//Approach 2
+function cntvow(str){
+    let cnt=0;
+    for(let vow of str){
+        if(vow==='a' || vow==='e'|| vow==='i' || vow==='o'|| vow==='u'){
+            cnt++;
+        }
+    }
+    return cnt;
+}
+
+
