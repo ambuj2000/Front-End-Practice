@@ -41,3 +41,37 @@ console.log(a.slice(1,3));
 
 let num=[1,2,3,4,5,6,7];
 num.splice(2,2,101,102);
+
+
+//Some more Array Methods with examples
+
+// 1. Map method
+
+let nums=[23,43,56,34];
+
+let newArray=nums.map((val)=>{
+    return val*2;//new array is created using some returned value
+});
+console.log(newArray);
+
+//diff b/w forEach and map is forEach use tab hota hai jab normally koi calculation karna
+// ho ya kuch print karna ho aur map tab use hota hai jab new array mein kuch store karn ho
+
+
+//2. filter method-->filter and creates new array based on certain conditions
+
+let newArr=nums.filter((val)=>{
+    return val%2===0;
+});
+console.log(newArr);
+
+
+//3. Reduce method-->reduces to single value in output result
+
+let arr=[1,2,3,4];
+
+const output=arr.reduce((prev,curr)=>{
+    return prev+curr;
+});
+console.log(output);
+
