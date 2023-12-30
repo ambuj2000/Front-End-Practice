@@ -115,3 +115,21 @@ function cntvow(str){
 }
 
 
+// Q.6  create a function using function keyword that takes String as an argument & returns the
+// number of vowels in the String.
+
+//Q.7 create arrow function to perform same operation
+
+const ans= (str) => {
+   let cnt=0;
+   for(const char of str){
+        if(char==='a'|| char==='e' || char==='i'||
+        char==='o' || char==='u'){
+             cnt++;
+        }
+   }
+   return cnt;
+}
+
+
+
