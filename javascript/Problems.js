@@ -149,3 +149,35 @@ arr.forEach(calcusquare);
 
 
 
+//Q.9 We are given array of marks of Students. Filter out the marks of the student that scored 90+.
+
+let arr1=[67,90,98,93,87];
+
+let newArr=arr1.filter((val)=>{
+      return val>=90;
+});
+console.log(newArr);
+
+
+//Q.10 Take a number n as an input from the user. Create an array of numbers from 1 to n.
+// Use reduce method to calculate the sum & product of all the numbers in the array 
+
+
+let takeip=prompt("Enter the number to create the array");
+
+let arr=[];
+
+for(let i=1;i<=takeip;i++){
+    arr[i-1]=i;
+}
+console.log(arr);
+
+let newAr=arr.reduce((prev,curr)=>{
+    return prev+curr;
+});
+
+console.log(newAr);
+
+
+
+
