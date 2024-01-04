@@ -1,0 +1,52 @@
+//Q.2  Create 3 div with common class name -"box". Access them & add some unique text to each of them
+
+//js file
+
+let divs=document.querySelectorAll(".box");
+
+let idx=0;
+for(div of divs){
+    div.innerText=`new unique value ${idx}`;
+    idx++;
+}
+
+
+//iske baad niche html file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+    <div class="box">third div</div>
+    <div class="box">third div</div>
+    <div class="box">third div</div>
+    <div class="box">third div</div>
+    <div class="box">third div</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+//CSS file niche
+
+.box {
+ height: 100px;
+ width: 100px;
+ border: 1px solid black;
+ margin: 5px;
+ text-align: center;
+ background-color: aquamarine;
+ border-radius: 10px;
+
+}
