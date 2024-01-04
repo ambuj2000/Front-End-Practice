@@ -1,0 +1,33 @@
+//Q. 1  D0M-- Create a H2 heading element with text -"Hello JavaScript". Append "from School students"
+// to this text using JS 
+
+
+
+//Js file mein yeh wala code add karna hai
+
+let h2=document.querySelector("h2");
+console.dir(h2.innerText);
+h2.innerText=h2.innerText+" from School students";
+
+
+//html file
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Hello JavaScript</h2>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+  
