@@ -108,3 +108,12 @@ async function getWeatherData(){
     await api();//2 this is the way await function is used inside the async function for 
     //calling the previous async function
 })();
+
+//filesystem module is also a async function
+
+const fs=require("fs");
+//file system module
+
+fs.readFile("a.txt","utf-8",function(err,data){
+    console.log(data);
+});
