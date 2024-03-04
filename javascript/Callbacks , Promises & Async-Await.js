@@ -121,10 +121,9 @@ fs.readFile("a.txt","utf-8",function(err,data){
 //Promise is a self-created async function which we are not using from others async function
 
 function AmbujAsyncFunction(){
-    let p=new Promise(function(resolve){
+    return new Promise(function(resolve){
         resolve("Hi there");
     }); 
-    return p; 
 }
 
 const value=AmbujAsyncFunction();
