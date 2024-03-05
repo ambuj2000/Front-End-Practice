@@ -130,3 +130,19 @@ const value=AmbujAsyncFunction();
 value.then(function(data){
     console.log(data);
 });
+
+//Async-await
+
+function AmbujAsyncFunction(){
+    let p =new Promise(function(resolve){
+        resolve("hi there");
+    });
+    return p;
+}
+
+async function main(){
+    const value=await AmbujAsyncFunction();
+    console.log(value);
+}
+
+main();
